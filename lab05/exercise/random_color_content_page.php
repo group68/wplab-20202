@@ -10,9 +10,12 @@
 
         public function addContent($content)
         {
-            $rColor = $this->randomColor();
-
-            parent::addContent("<p style=\"background-color:$rColor\">$content</p>\n");
+            $content = explode("\n", $content);
+            foreach ($content as $line)
+            {
+                $rColor = $this->randomColor();
+                parent::addContent("<p style=\"background-color:$rColor\">$line</p>\n");
+            }
         }
     }
 ?>

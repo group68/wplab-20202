@@ -5,7 +5,11 @@
     {
         public function addContent($content)
         {
-            parent::addContent("<li>$content</li>\n");
+            $content = explode("\n", $content);
+            foreach ($content as $line)
+            {
+                parent::addContent("<li>$line</li>\n");
+            }
         }
 
         public function get()
