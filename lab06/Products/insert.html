@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Insert Data</title>
+        <style>
+            th{
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+        <form action="insert.php" method=POST>
+        <tr> <th>Item description: </th><th><input type="text" size="20" c maxlength="20" name="desc"></th></tr>
+        <tr> <th>Weight: </th><th><input type="number" min="0" step="0.01" size="20" maxlength="20" name="weight"></th></tr>
+        <tr><th>Cost: </th><th><input type="number" min="0" step="0.01" size="20" maxlength="20" name="cost"></th></tr>
+        <tr><th>Number available: </th><th><input type="number" min="0" size="20" maxlength="20" name="num"></th></tr></tr>
+        <br>
+        <tr><th><input type="submit" value="Click to submit"></th>
+        <th><input type="reset" value = "Click to reset"></th></tr>
+        </form>
+        </table>
+    </body>
+</html>

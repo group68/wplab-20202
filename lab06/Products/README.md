@@ -1,0 +1,1 @@
+Before using, change the information in "app.ini" according to your own config.
