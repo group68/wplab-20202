@@ -1,21 +1,59 @@
-<html>
-    <head>
-        <title>Search Data</title>
-        <style>
-            th{
-                text-align: left;
-            }
-        </style>
-    </head>
-    <body>
-        <table>
-        <form action="search.php" method=POST>
-        <tr><font size="4" color="blue">Inventory Search:</font> </tr>
-        <tr><th>Enter product to search for: </th><th><input type="text" size="20" maxlength="20" name="name"></th></tr></tr>
-        <br>
-        <tr><th><input type="submit" value="Click to submit"></th>
-        <th><input type="reset" value = "Click to reset"></th></tr>
-        </form>
-        </table>
-    </body>
+<!DOCTYPE html>
+<html lang="en" dir='lrt'>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../search.css">
+</head>
+
+<body>
+
+    <div class="container-fluid mt-20 h-100">
+        <div class="intro row">
+            <div class="bg-image h-100">
+                <div class="mask d-flex vertical-center align-items-center justify-content-center h-100"
+                    >
+                    <div class="container mw-60">
+                        <div class="card mask-custom p-4 align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="h1 font-weight-bold mb-4 text-white">Inventory Search</p>
+                                <form action="search.php" class="form" method=POST>
+                                    <div class="row justify-content-center al-b mw-100">
+
+                                        <div class="col-md-8 mb-3 mb-md-0 ">
+
+                                            <div id="basic" class="form-outline form-white">
+                                                <label class="form-label" for="form1">Enter product to search
+                                                    for:</label>
+                                                <input type="text" id="form1" class="form-control form-control-lg"
+                                                    name="name" maxlength="20" />
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-2 ">
+                                            <label class="form-label" for="form2"></label>
+                                            <input class="btn btn-submit btn-block btn-lg" type="submit"
+                                                value="Search" />
+                                        </div>
+                                        <div class="col-md-2 ">
+                                            <label class="form-label" for="form2"></label>
+                                            <input class="btn btn-reset btn-block btn-lg" type="reset" value="Reset" />
+                                        </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
 </html>
