@@ -1,0 +1,244 @@
+.main-title {
+    margin-top: 50px;
+    color: #ed7014;
+    font-size: 30px;
+}
+
+.sub-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #8d4004;
+    font-size: 20px;
+}
+
+
+
+body {
+    /* background-color: #eae3c8; */
+    /* background-image: linear-gradient(to right, red , yellow); */
+    background: url("http://www.webcoderskull.com/img/right-sider-banner.png") no-repeat center top / cover;
+
+    align-items: center;
+}
+
+#shadow-box {
+    border: #c2b092 solid 1px;
+    box-shadow: 1px 1px 1px #c2b092 !important;
+}
+
+.bounding-box {
+    display: block;
+    background-color:azure;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-right: 20px;
+    margin-top: auto;
+    margin-right: auto;
+    border: #a1cae2 solid 2px;
+    border-radius: 2%;
+    align-items: center;
+    /* box-shadow: 5px 10px 8px #888888; */
+}
+
+.centerDiv{
+    width: 60%;
+    border-radius: 5px;
+    background: #ccc;
+
+    padding: 10px;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -400px;
+    top: 50%;
+    left: 50%;
+  }
+title {
+    color: #ed7014;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+
+
+.mw-40 {
+    width: 40%;
+    
+}
+
+.mw-80 {
+    width: 80%;
+    
+}
+
+.mw-60 {
+    width: 60%;
+    
+}
+
+.mw-100 {
+    width: 100%;
+}
+
+.table-dark {
+    background-color: black;
+    color: white;
+}
+
+
+.mask-custom {
+    color: white;
+  background: rgba(24, 24, 16, .2);
+  border-radius: 2em;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+
+.mask-custom-clear {
+    color: white;
+  background: rgba(24, 24, 16, .2);
+  border-radius: 2em;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px
+}
+
+.tbl-header{
+    background-color: rgba(255,255,255,0.3);
+   }
+
+   .tbl-content{
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+
+
+  th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+  }
+
+  a {
+      color: #eee !important;
+      font-size: 14px;
+  }
+
+  input {
+    color: white !important;
+    background-color: transparent !important;
+    border: 1px solid white !important;
+  }
+  
+.auto-margin {
+    margin-top: 4em !important;
+    margin-bottom: 4em !important;
+}
+
+.auto-padding {
+    padding-left: 4em !important;
+    padding-right: 4em !important;
+    padding-bottom: 4em;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.mr-20 {
+    margin-right: 20px !important;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn-submit {
+    background-image: linear-gradient(to left, #4389A2, #5C258D) !important;
+    color: white !important;
+    border-radius: 0.5em !important;
+    width: 200px;
+}
+.btn-submit:hover {
+    background-image: linear-gradient(to right, #4389A2, #5C258D) !important; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+}
+.btn-reset {
+    background-color: #cfc5a5 important;
+    border-radius: 0.5em !important;
+    width: 200px;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #1D2B64 0%, #F8CDDA  51%, #1D2B64  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+ .form-select {
+     color: #eee !important;
+     background-color: transparent !important;
+     border: white solid 1px !important;
+     width: 30%;
+ }
+
+ .list-inline-item {
+     border: rgba(255, 255, 255, 0.3) solid 1px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     padding-right: 5px;
+     padding-left: 5px;
+ }
