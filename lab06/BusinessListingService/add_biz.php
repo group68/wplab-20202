@@ -44,11 +44,11 @@
             $city = $_POST['city'];
             $tele = $_POST['tele'];
             $url = $_POST['url'];
-            mysqli_query($mysqli, "INSERT INTO businesses VALUES(NULL,'$bname','$addr','$city','$tele','$url');");
-            $getBID = mysqli_query($mysqli,"SELECT businessid FROM businesses where name = '$bname' && City = '$city'");
+            mysqli_query($mysqli, "INSERT INTO Businesses VALUES(NULL,'$bname','$addr','$city','$tele','$url');");
+            $getBID = mysqli_query($mysqli,"SELECT businessid FROM Businesses where name = '$bname' && City = '$city'");
             $bid = mysqli_fetch_row($getBID)[0];
             foreach ($cats as $cat) {
-                mysqli_query($mysqli, "INSERT INTO biz_categories VALUES($bid,'$cat');");
+                mysqli_query($mysqli, "INSERT INTO Biz_Categories VALUES($bid,'$cat');");
             } 
             print '<p>Record inserted as shown below.';
             print '<br>';

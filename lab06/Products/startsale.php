@@ -33,22 +33,21 @@
                                     if ($query = mysqli_query($mysqli, $SQLcmd)) {
                                         print '<font size="5" color="#ffe3fe" > Select Product We Just Sold</font>';
                                         print '<br>';
-                                        $name_query = mysqli_query($mysqli, "SELECT product_desc FROM products;");
+                                        $name_query = mysqli_query($mysqli, "SELECT ProductID, Product_desc FROM Products;");
                                         print '<form action="./sale.php" method="POST">';
                                         $i = 1;
                                         while ($row = mysqli_fetch_row($name_query)) {
-
-                                            foreach ($row as $field) {
-                                                if ($i % 3 == 0) {
-                                                    print "<div class = 'row'>";
-                                                }
-                                                print "<div class = 'col-sm-4'>";
-                                                echo "<input type=\"checkbox\" value = '$field' name=\"input[]\"/> $field ";
-                                                print "</div>";
-                                                if ($i % 3 == 0) {
-                                                    print "</div>";
-                                                }
+                                            
+                                            if ($i % 3 == 0) {
+                                                print "<div class = 'row'>";
                                             }
+                                            print "<div class = 'col-sm-4'>";
+                                            echo "<input type=\"checkbox\" value = '$row[0]' name=\"input[]\"/> $row[1] ";
+                                            print "</div>";
+                                            if ($i % 3 == 0) {
+                                                print "</div>";
+                                            }
+                                            
                                             $i++;
                                         }
                                         print "<div class = 'row mw-40'>";
