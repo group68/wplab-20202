@@ -31,7 +31,7 @@
 
         print '<table class="table mt-20" cellpadding="0" cellspacing="0" border="0">';
         print '<tr><th>Click on a category to find business listings:</th></tr>';
-        $query = mysqli_query($mysqli,"SELECT CategoryID, title FROM categories;");
+        $query = mysqli_query($mysqli,"SELECT CategoryID, title FROM Categories;");
         while ($row = mysqli_fetch_row($query)) {
             print '<tr><td>';
             print "<a href='biz_listing.php?cat_id=$row[0]'>$row[1]</a>";

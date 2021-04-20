@@ -23,7 +23,7 @@
         $user = $ini['user'];
         $pass = $ini['pass'];
         $mydb = $ini['mydb'];
-        $table_name = 'categories';
+        $table_name = 'Categories';
 
         $mysqli = mysqli_connect($server, $user, $pass);
         if (!$mysqli) {

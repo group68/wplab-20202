@@ -33,7 +33,7 @@
                                     if (isset($_POST['input'])) {
                                         $input = $_POST['input'];
                                         foreach ($input as $inp) {
-                                                mysqli_query($mysqli, "UPDATE $table_name SET NUMB = NUMB - 1 WHERE product_desc = '$inp'");
+                                                mysqli_query($mysqli, "UPDATE $table_name SET NUMB = NUMB - 1 WHERE ProductID = $inp");
                                         }
                                     } else print '<p> You did not sell anything!</p>';
                                     
