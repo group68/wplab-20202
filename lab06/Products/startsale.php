@@ -43,7 +43,7 @@
                                                     print "<div class = 'row'>";
                                                 }
                                                 print "<div class = 'col-sm-4'>";
-                                                echo "<input type=\"checkbox\" value = $field name=\"input$i\"/> $field ";
+                                                echo "<input type=\"checkbox\" value = '$field' name=\"input[]\"/> $field ";
                                                 print "</div>";
                                                 if ($i % 3 == 0) {
                                                     print "</div>";

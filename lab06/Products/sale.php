@@ -30,17 +30,13 @@
                                 } else {
                                     $SQLcmd = "SELECT COUNT(PRODUCTID) FROM $table_name; ";
                                     mysqli_select_db($mysqli, $mydb);
-                                    if ($query = mysqli_query($mysqli, $SQLcmd)) {
-                                        $num = mysqli_fetch_array($query)[0];
-                                        $num = intval($num);
-                                        for ($i = 0; $i < $num; $i++) {
-                                            $input = "input" . $i;
-                                            if (isset($_POST["$input"])) {
-                                                $input = $_POST["$input"];
-                                                mysqli_query($mysqli, "UPDATE $table_name SET NUMB = NUMB - 1 WHERE product_desc = '$input'");
-                                            }
+                                    if (isset($_POST['input'])) {
+                                        $input = $_POST['input'];
+                                        foreach ($input as $inp) {
+                                                mysqli_query($mysqli, "UPDATE $table_name SET NUMB = NUMB - 1 WHERE product_desc = '$inp'");
                                         }
-                                    }
+                                    } else print '<p> You did not sell anything!</p>';
+                                    
                                     $SQLcmd = "SELECT * FROM $table_name; ";
                                     $query = mysqli_query($mysqli, $SQLcmd);
                                     print "<br>The query is:";
@@ -48,16 +44,16 @@
                                     if ($query) {
                                         print
                                             '<table class="table table-striped mt-20">
-                                    <thead class="thead-dark">
-    <tr>
-      <th scope="col">ProductID</th>
-      <th scope="col">Product</th>
-      <th scope="col">Cost</th>
-      <th scope="col">Weight</th>
-      <th scope="col">Count</th>
-    </tr>
-  </thead>
-  <tbody>';
+                                                <thead class="thead-dark">
+                                                    <tr>
+                                                    <th scope="col">ProductID</th>
+                                                    <th scope="col">Product</th>
+                                                    <th scope="col">Cost</th>
+                                                    <th scope="col">Weight</th>
+                                                    <th scope="col">Count</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>';
                                         while ($row = mysqli_fetch_row($query)) {
                                             print '<tr >';
                                             foreach ($row as $field) {

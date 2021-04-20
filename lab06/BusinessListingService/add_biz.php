@@ -33,7 +33,10 @@
 
         $query = mysqli_query($mysqli, "SELECT CategoryID, Title FROM Categories");
         
-        
+        if (!empty($_POST) && !isset($_POST['cat'])) {
+            print '<p> You must select category!</p>';
+        }
+
         if (isset($_POST['cat'])) {
             $cats = $_POST['cat'];
             $bname = $_POST['bname'];
@@ -49,9 +52,8 @@
             } 
             print '<p>Record inserted as shown below.';
             print '<br>';
-            print 'Selected category values are highlighted';
             print '<form method=POST>';
-            print '<select class="form-select form-select-lg mb-20" aria-label=".form-select-lg example name="cat[]" multiple"> disabled';
+            print '<select class="form-select form-select-lg mb-20" aria-label=".form-select-lg example" name="cat[]" multiple> disabled';
             while ($row = mysqli_fetch_row($query)) {
                 if (in_array($row[0],$cats)){
                     print "<option value=\"$row[0]\" selected disabled>$row[1]";
@@ -87,7 +89,7 @@
                    </p>';
             
             print '<form method=POST>';
-            print '<select class="form-select form-select-lg mb-20" aria-label=".form-select-lg example name="cat[]" multiple> ';
+            print '<select class="form-select form-select-lg mb-20" aria-label=".form-select-lg example" name="cat[]" multiple> ';
             while ($row = mysqli_fetch_row($query)) {
                 print "<option value=\"$row[0]\">$row[1]";
                 print '</option>';
@@ -95,7 +97,7 @@
             print '</select>';
 
             print '<br>';
-            print '<table class = "mt-20>';
+            print '<table class = "mt-20">';
             print '<tr><td>Business Name:</td>
             <td><input type="text" name="bname"></td></tr>';
             print '<tr><td>Address:</td>
