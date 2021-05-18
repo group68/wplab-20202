@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE group SYSTEM "student.dtd">
+
+<group>
+    <student>
+        <id> 20184249 </id>
+        <name> Nguyen Anh Duy </name>
+        <class> ICT.02 K63 </class>
+    </student>
+
+    <student>
+        <id> 20184244 </id>
+        <name> Nguyen Thuy Dung </name>
+        <class> ICT.01 K63 </class>
+    </student>
+
+    <student>
+        <id> 20184250 </id>
+        <name> Hoang Manh Ha </name>
+        <class> ICT.01 K63 </class>
+    </student>
+
+    <student>
+        <id> 201843xx </id>
+        <name> Bui Thanh Tung </name>
+        <class> ICT.01 K63 </class>
+    </student>
+</group>
