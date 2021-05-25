@@ -21,6 +21,10 @@
         Teacher.prototype.teach = function (subject) {
             console.log(this.name + ' is now teaching ' + subject);
         }
+
+        var you = new Teacher();
+        you.initialize("Mary",32);
+        you.teach("Programming");
     </script>
 </head>
 
