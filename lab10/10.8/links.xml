@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <pages>
   <link>
-    <title>HTML a tag</title>
-    <url>https://www.w3schools.com/tags/tag_a.asp</url>
+    <title>Hammer</title>
+    <url>https://www.google.com/search?q=hammer</url>
   </link>
   <link>
-    <title>HTML br tag</title>
-    <url>https://www.w3schools.com/tags/tag_br.asp</url>
+    <title>Screw</title>
+    <url>https://www.google.com/search?q=screw</url>
   </link>
   <link>
-    <title>CSS background Property</title>
-    <url>https://www.w3schools.com/cssref/css3_pr_background.asp</url>
+    <title>Tesla</title>
+    <url>https://www.google.com/search?q=tesla</url>
   </link>
   <link>
-    <title>CSS border Property</title>
-    <url>https://www.w3schools.com/cssref/pr_border.asp</url>
+    <title>Frying pan</title>
+    <url>https://www.google.com/search?q=frying+pan</url>
   </link>
   <link>
-    <title>JavaScript Date Object</title>
-    <url>https://www.w3schools.com/jsref/jsref_obj_date.asp</url>
+    <title>Air conditioner</title>
+    <url>https://www.google.com/search?q=air+conditioner</url>
   </link>
   <link>
-    <title>JavaScript Array Object</title>
-    <url>https://www.w3schools.com/jsref/jsref_obj_array.asp</url>
+    <title>Everything</title>
+    <url>https://www.google.com/search?q=everything</url>
   </link>
 </pages>
