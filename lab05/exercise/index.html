@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+    <title>Web page generator</title>
+    <style>
+        .input_radio
+        {
+            padding-right: 30px;
+        }
+        .column_label
+        {
+            padding-right: 10px;
+        }
+        td
+        {
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid mt-20 h-100">
+        <div class="intro row">
+            <div class="bg-image h-100">
+                <div class="mask d-flex vertical-center align-items-center justify-content-center h-100"
+                    >
+                    <div class="container mw-80 auto-margin ">
+                        <div class="card mask-custom p-4 align-items-center justify-content-center">
+                            <div class="card-body auto-padding d-flex horizontal-center">
+    <form action="generator.php" method="post">
+        <h1>Please specify your page content:</h1>
+        <table>
+            <tr>
+                <td class="column_label">
+                    <label for="id_title">Title</label>
+                </td>
+                <td>
+                    <input type="text" size = "40" id="id_title" name="title" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td class="column_label">
+                    <label for="id_year">Year</label>
+                </td>
+                <td>
+                    <input type="text" id="id_year" size = "40" name="year" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td class="column_label">
+                    <label for="id_copyright">Copyright</label>
+                </td>
+                <td>
+                    <input type="text" id="id_copyright" size = "40" name="copyright" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td class="column_label">
+                    <label for="content_id">Content</label>
+                </td>
+                <td>
+                    <textarea id="id_content" name="content" value=""
+                            cols="40" rows="10">
+                    </textarea>
+                </td>
+            </tr>
+        </table>
+
+        <br/>
+
+        <p>Page content type:</p>
+        <input type="radio" id="page_type_plain_id" name="page_type" value="plain" checked/>
+        <label class="input_radio" for="id_page_type_plain">Plain</label>
+        <input type="radio" id="id_page_type_list" name="page_type" value="list"/>
+        <label class="input_radio" for="id_page_type_list">List</label>
+        <input type="radio" id="id_page_type_color" name="page_type" value="color"/>
+        <label class="input_radio" for="id_page_type_color">Color</label>
+
+        <br/><br/>
+        <input class = "btn btn-submit" type="submit" value="Submit"/>
+
+    </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
